@@ -2,7 +2,7 @@ import React from 'react'
 import { useTranslation } from "react-i18next";
 
 const Hero = () => {
-    const {t,i18n} = useTranslation()
+    const {t} = useTranslation()
   return (
     <div className='relative'>
         <img src="https://gega-project.netlify.app/images/batman.jpg" alt="batman" className='w-full ' />

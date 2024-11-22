@@ -26,19 +26,5 @@
         title: 'About',
         path: '/about',
       },
-    ],
-    tr: [
-      {
-        title: 'Ana sayfa',
-        path: '/',
-      },
-      {
-        title: 'Ürünler',
-        path: '/products',
-      },
-      {
-        title: 'Hakkımızda',
-        path: '/about',
-      },
-    ],
+    ]
   };
