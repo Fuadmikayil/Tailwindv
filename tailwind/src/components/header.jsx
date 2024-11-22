@@ -4,7 +4,28 @@ import { navLinks } from "../data/navLinks";
 import { FaSearch } from "react-icons/fa";
 import { MdLightMode } from "react-icons/md";
 const Header = () => {
-  
+    const [isDarkMode, setIsDarkMode] = useState(true);
+    useEffect(() => {
+        const savedTheme = localStorage.getItem("theme");
+        if (savedTheme === "dark") {
+          document.documentElement.classList.add("dark");
+          setIsDarkMode(true);
+        } else {
+          document.documentElement.classList.remove("dark");
+          setIsDarkMode(false);
+        }
+      }, []);
+      
+      const toggleMode = () => {
+        const newMode = !isDarkMode;
+        setIsDarkMode(newMode);
+        localStorage.setItem("theme", newMode ? "dark" : "light");
+        if (newMode) {
+          document.documentElement.classList.add("dark");
+        } else {
+          document.documentElement.classList.remove("dark");
+        }
+      };
       
   return (
     <div className="w-full  dark:bg-black  h-32 container flex justify-between items-center  ">
