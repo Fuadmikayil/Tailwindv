@@ -1,19 +1,4 @@
-export const navLinks = [
-      {
-        title: 'Home',
-        path: '/',
-      },
-      {
-        title: 'Products',
-        path: '/products',
-      },
-      {
-        title: 'About',
-        path: '/about',
-      },
-    ]
-
-  /*export const navLinks = {
+  export const navLinks = {
     az: [
       {
         title: 'Ana Səhifə',
@@ -56,4 +41,4 @@ export const navLinks = [
         path: '/about',
       },
     ],
-  };*/
+  };

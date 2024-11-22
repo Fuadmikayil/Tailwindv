@@ -1,9 +1,11 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useTransition } from "react";
 import { NavLink } from "react-router-dom";
 import { navLinks } from "../data/navLinks";
 import { FaSearch } from "react-icons/fa";
 import { MdLightMode } from "react-icons/md";
+import { useTranslation } from "react-i18next";
 const Header = () => {
+    const {t,i18n} = useTranslation()
     const [isDarkMode, setIsDarkMode] = useState(true);
     useEffect(() => {
         const savedTheme = localStorage.getItem("theme");
@@ -34,7 +36,7 @@ const Header = () => {
           GEGA 
         </a>
         <nav className="ml-auto flex space-x-4">
-          {navLinks.map((item, index) => {
+          {navLinks[i18n.language].map((item, index) => {
             return (
               <NavLink
                 key={index}
@@ -54,8 +56,8 @@ const Header = () => {
         <FaSearch className="dark:text-white ml-2 cursor-pointer " />
         </div>
         <MdLightMode className="dark:text-white text-2xl cursor-pointer" onClick={toggleMode} />
-        <button className="dark:text-white">LOGİN</button>
-        <button className="dark:text-white bg-red-800 text-white rounded-xl px-5 py-3">SİNG UP</button>
+        <button className="dark:text-white">{t("login")}</button>
+        <button className="dark:text-white bg-red-800 text-white rounded-xl px-5 py-3">{t("signUp")}</button>
       </div>
     </div>
   );
