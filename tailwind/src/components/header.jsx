@@ -28,7 +28,7 @@ const Header = () => {
       };
       
   return (
-    <div className="w-full  dark:bg-black  h-32 container flex justify-between items-center  ">
+    <div className="w-full  dark:bg-black py-7 container flex justify-between items-center  ">
       <div className=" flex gap-10 items-center">
         <a href="#" className="dark:text-gray-200 tracking-wider text-5xl font-bold">
           GEGA 

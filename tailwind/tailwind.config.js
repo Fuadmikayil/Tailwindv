@@ -10,6 +10,10 @@ export default {
       container: {
         padding:"6rem"
       },
+      backgroundImage: {
+        'custom-gradient': 'linear-gradient(0deg, rgba(0,0,0,1) 14%, rgba(0,212,255,0) 100%);',
+      },
+      
     },
   },
   plugins: [],
