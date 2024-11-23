@@ -12,6 +12,9 @@ const Filims = () => {
               })
             }
         </div>
+        <div className='bg-gray-600 w'>
+            
+        </div>
     </div>
   )
 }

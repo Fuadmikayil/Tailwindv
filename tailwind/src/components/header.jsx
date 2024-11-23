@@ -68,13 +68,13 @@ const Header = () => {
           className="dark:text-white text-2xl cursor-pointer"
           onClick={toggleMode}
         />
-        <select onChange={(e) => changeLanguage(e.target.value)} className="bg-transparent uppercase dark:text-white  border-none text-sm p-1">
+        <select onChange={(e) => changeLanguage(e.target.value)} className="bg-transparent outline-none uppercase dark:text-white  border-none text-sm p-1">
           {languages.map((item) => {
             return <option value={item} className="dark:text-white dark:bg-black  ">{item}</option>;
           })}
         </select>
-        <button className="dark:text-white uppercase">{t("login")}</button>
-        <button className="dark:text-white bg-red-800  rounded-xl px-5 py-3 uppercase">
+        <NavLink to="/login" className="dark:text-white uppercase">{t("login")}</NavLink>
+        <button  className="text-white bg-red-800  rounded-xl px-5 py-3 uppercase">
           {t("signUp")}
         </button>
       </div>
