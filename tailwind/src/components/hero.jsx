@@ -4,7 +4,7 @@ import gsap from "gsap";
 const Hero = () => {
   const icon1 = useRef();
   const icon2 = useRef();
-  const tl = gsap.timeline({ defaults: { duration: 5 } });
+  const tl = gsap.timeline({ defaults: { duration: 6 } });
 
   useEffect(() => {
     tl.fromTo(
