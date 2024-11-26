@@ -6,6 +6,7 @@ import { MdLightMode } from "react-icons/md";
 import { useTranslation } from "react-i18next";
 import { changeLanguage } from "i18next";
 import gsap from "gsap";
+import { Container } from "postcss";
 
 const Header = () => {
   const languages = ["az", "en"];
@@ -44,6 +45,8 @@ const Header = () => {
   };
 
   return (
+    <>
+    <header>
     <div className="w-full  dark:bg-black py-7 container flex justify-between items-center  relative ">
       <div className=" flex gap-10 items-center">
         <a
@@ -100,6 +103,9 @@ const Header = () => {
         </NavLink>
       </div>
     </div>
+    </header>
+    </>
+
   );
 };
 

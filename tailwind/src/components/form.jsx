@@ -12,6 +12,7 @@ const Form = () => {
     console.log(info);
   };
   return (
+    <>
     <form
       onSubmit={handleSubmit(demo)}
       className="w-full h-screen bg-slate-950 flex justify-center items-center flex-col text-white gap-5"
@@ -84,6 +85,7 @@ const Form = () => {
         Qeydiyyatdan Keç
       </button>
     </form>
+    </>
   );
 };
 

@@ -4,6 +4,7 @@ import { useTranslation } from 'react-i18next';
 const Filims = () => {
   const { t, i18n } = useTranslation();
   return (
+    <>
     <div className='bg-black container'>
         <div className=' space-x-5'>
             {
@@ -16,6 +17,7 @@ const Filims = () => {
             
         </div>
     </div>
+    </>
   )
 }
 

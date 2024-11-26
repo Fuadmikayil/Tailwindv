@@ -21,7 +21,8 @@ const Hero = () => {
   }, []);
   const { t } = useTranslation();
   return (
-    <div className="relative overflow-hidden">
+    <>
+    <div className="relative overflow-hidden  ">
       <img
         ref={icon1}
         className="absolute   w-52 h-52    top-24  rotate-90  "
@@ -35,9 +36,9 @@ const Hero = () => {
       <img
         src="https://gega-project.netlify.app/images/batman.jpg"
         alt="batman"
-        className="w-full "
+        className="max-w-full"
       />
-      <div className="bg-custom-gradient absolute bottom-0 w-full pb-20 container space-y-4">
+      <div className="bg-custom-gradient absolute bottom-0 w-full pb-20  space-y-4">
         <h2 className="text-[#f4a443] text-2xl">{t("content")}</h2>
         <h4 className="text-white text-5xl">{t("name")}</h4>
         <p className="text-md max-w-[60%] text-white">
@@ -47,6 +48,7 @@ const Hero = () => {
         </p>
       </div>
     </div>
+    </>
   );
 };
 
