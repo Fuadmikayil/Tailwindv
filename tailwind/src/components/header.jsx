@@ -92,12 +92,12 @@ const Header = () => {
             );
           })}
         </select>
-        <NavLink to="/login" className="dark:text-white uppercase">
+        <NavLink to="/" className="dark:text-white uppercase">
           {t("login")}
         </NavLink>
-        <button className="text-white bg-red-800  rounded-xl px-5 py-3 uppercase">
+        <NavLink to="/login" className="text-white bg-red-800  rounded-xl px-5 py-3 uppercase">
           {t("signUp")}
-        </button>
+        </NavLink>
       </div>
     </div>
   );
